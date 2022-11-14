@@ -8,7 +8,7 @@ var canvas = document.getElementById( 'canvas' ),
     charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'],
     maxCharCount = 100,
     fallingCharArr = [],
-    fontSize =7,
+    fontSize =11,
     maxColums = cw/(fontSize);
     canvas.width = canvas2.width = cw;
     canvas.height = canvas2.height = ch;
