@@ -1,11 +1,13 @@
-var canvas = document.getElementById( 'canvas' ),
+//falling letters effect
+
+let canvas = document.getElementById( 'canvas' ),
 		ctx = canvas.getContext( '2d' ),
     canvas2 = document.getElementById( 'canvas2' ),
     ctx2 = canvas2.getContext( '2d' ),
 		// full screen dimensions
 		cw = window.innerWidth,
 		ch = window.innerHeight,
-    charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'],
+    charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','キ','ア','ヌ'],
     maxCharCount = 100,
     fallingCharArr = [],
     fontSize =11,
@@ -52,24 +54,24 @@ var canvas = document.getElementById( 'canvas' ),
         }
     }
 
-    for(var i = 0; i < maxColums ; i++) {
-      fallingCharArr.push(new Point(i*fontSize,randomFloat(-500,0)));
+    for(let i = 0; i < maxColums ; i++) {
+      fallingCharArr.push(new Point(i*fontSize,randomFloat(-1000,0)));
     }
 
 
-    var update = function()
+    let update = function()
     {
 
-    ctx.fillStyle = "rgba(0,0,0,0.05)";
+    ctx.fillStyle = "rgba(0,25,15,0.05)";
     ctx.fillRect(0,0,cw,ch);
 
     ctx2.clearRect(0,0,cw,ch);
 
-      var i = fallingCharArr.length;
+      let i = fallingCharArr.length;
 
       while (i--) {
         fallingCharArr[i].draw(ctx);
-        var v = fallingCharArr[i];
+        let v = fallingCharArr[i];
       }
 
       requestAnimationFrame(update);

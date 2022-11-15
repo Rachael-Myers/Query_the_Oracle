@@ -1,5 +1,8 @@
 
 body {
+    background-color: rgba(0, 0, 255, 0.112);
+    width: 99vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     }
@@ -16,11 +19,23 @@ body {
       border: 12px double #00cc44;
       z-index: 100;
     }
+    /*This is the actual question input form section*/
+    main {
+        background-color: red);
+        width: 99.6%;
+        color: fuchsia;
+        height: auto;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+    }
     section {
       width: 99vw;
-      height: 100%;
+      height: auto;
       z-index: 236;
-      background-color: rgb(0 0 0 /.8)
+      background-color: grey
       
     }
     @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
@@ -35,7 +50,7 @@ body {
     
     .wrapper {
       margin-top: 5%;
-      width: 100%;
+      width: 99.5%;
       height: 100%;
       font-size: 24px;
     }
