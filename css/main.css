@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     }
     
     canvas {
@@ -11,13 +12,13 @@ body {
       z-index:-10;
     }
     .borders {
-     height: 50px;
-      border: 12px double red;
-      z-index= 100;
+     
+      border: 12px double #00cc44;
+      z-index: 100;
     }
     section {
-      width: 100vw;
-      heigth: 50px;
+      width: 99vw;
+      height: 100%;
       z-index: 236;
       background-color: rgb(0 0 0 /.8)
       
@@ -26,7 +27,7 @@ body {
     
     html {
       height: 100%;
-      width: 100%;
+      width: 99%;
       background: #111;
       color: #00cc44;
       font-family: "Major Mono Display", monospace;
@@ -36,6 +37,7 @@ body {
       margin-top: 5%;
       width: 100%;
       height: 100%;
+      font-size: 24px;
     }
     
     .line__1,
@@ -44,24 +46,25 @@ body {
       overflow: hidden; /* hide text behind the cursor */
       margin: 0.5rem auto;
       font-family: "Major Mono Display", monospace;
-      font-size: 1.75rem;
+      font-size: 3rem;
       font-weight: bold;
+      text-align: center;
     }
     
     .line__1 {
       border-right: 2px solid rgba(17, 17, 17, 0.9);
     
       /* define animation types for text + cursor */
-      animation: animated-text__1 6s steps(30, end) 1s 1 normal both,
-        animated-cursor__1 900ms steps(30, end) 8;
+      animation: animated-text__1 6s steps(40, end) 1s 1 normal both,
+        animated-cursor__1 900ms steps(40, end) 8;
     }
     
     .line__2 {
       border-right: 2px solid rgba(17, 17, 17, 0.9);
     
       /* define animation types for text + cursor */
-      animation: animated-text__2 5s steps(30, end) 1s 1 normal both,
-        animated-cursor__2 900ms steps(30, end) infinite;
+      animation: animated-text__2 5s steps(40, end) 1s 1 normal both,
+        animated-cursor__2 900ms steps(40, end) infinite;
       -webkit-animation-delay: 7s;
       animation-delay: 7s;
     }
@@ -89,7 +92,7 @@ body {
         width: 0;
       }
       to {
-        width: 45rem;
+        width: 58rem;
       }
     }
     
@@ -98,7 +101,7 @@ body {
         width: 0;
       }
       to {
-        width: 29rem;
+        width: 50rem;
       }
     }
     
