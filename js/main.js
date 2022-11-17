@@ -62,7 +62,7 @@ let canvas = document.getElementById( 'canvas' ),
     let update = function()
     {
 
-    ctx.fillStyle = "rgba(0,25,15,0.05)";
+    ctx.fillStyle = "rgba(0,5,5,0.05)";
     ctx.fillRect(0,0,cw,ch);
 
     ctx2.clearRect(0,0,cw,ch);
@@ -78,3 +78,7 @@ let canvas = document.getElementById( 'canvas' ),
     }
 
   update();
+  function myFunction() {
+    let x = document.getElementById("myForm").action;
+    document.getElementById("demo").innerHTML = x;
+  }
