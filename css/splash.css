@@ -4,10 +4,22 @@
 }
 
 body {
-    background-color: black
+    background-color: black;
     width: 99vw;
     height: 100vh;
     margin: 0;
     padding: 0;
+    color: rgba(0, 196, 65, 0.934);
+    font-family: 'courier', monospace;
+    text-align: center;
+    text-shadow: 1px 1px aliceblue;
+    font-weight: 100;
   
     }
+    .borders {
+     
+        border: 2px solid rgb(0 196 64 / 0.4);
+        z-index: 100;
+        outline: 2px solid rgb(0 10 5 / 0.5);
+        text-align: center;
+      }    
